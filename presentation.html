@@ -53,10 +53,11 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 80px;
+            padding: 60px 40px;
             color: white;
             text-align: center;
             max-width: 1400px;
+            box-sizing: border-box;
         }
 
         /* Градиентные фоны для слайдов без изображений */
@@ -83,7 +84,7 @@
         }
 
         h3 {
-            font-size: 36px;
+            font-size: 32px;
             font-weight: 600;
             margin-bottom: 15px;
         }
@@ -181,9 +182,11 @@
 
         .comparison-column {
             background: rgba(255, 255, 255, 0.1);
-            padding: 40px;
+            padding: 30px 25px;
             border-radius: 20px;
             backdrop-filter: blur(10px);
+            word-wrap: break-word;
+            overflow-wrap: break-word;
         }
 
         .comparison-column h3 {
@@ -191,10 +194,10 @@
         }
 
         .comparison-item {
-            font-size: 20px;
-            line-height: 1.8;
-            margin-bottom: 15px;
-            padding-left: 40px;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 12px;
+            padding-left: 35px;
             position: relative;
         }
 
@@ -353,6 +356,21 @@
             opacity: 0.8;
         }
 
+        @media (max-width: 1400px) {
+            .slide-content { padding: 40px 30px; }
+            h2 { font-size: 42px; }
+            .comparison-item { font-size: 16px; }
+            .comparison-column { padding: 25px 20px; }
+        }
+
+        @media (max-width: 1024px) {
+            .slide-content { padding: 30px 20px; }
+            h1 { font-size: 48px; }
+            h2 { font-size: 36px; }
+            h3 { font-size: 28px; }
+            .comparison-table { gap: 20px; }
+        }
+
         @media (max-width: 768px) {
             h1 { font-size: 36px; }
             h2 { font-size: 32px; }
@@ -361,6 +379,7 @@
             .cards-grid.three-col,
             .cards-grid.four-col { grid-template-columns: 1fr; }
             .comparison-table { grid-template-columns: 1fr; }
+            .comparison-item { font-size: 14px; }
         }
     </style>
 </head>
