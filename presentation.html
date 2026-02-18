@@ -346,6 +346,21 @@
             z-index: 100;
         }
 
+        .logo {
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            height: 60px;
+            width: auto;
+            z-index: 100;
+            opacity: 0.9;
+            transition: opacity 0.3s ease;
+        }
+
+        .logo:hover {
+            opacity: 1;
+        }
+
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -930,6 +945,9 @@
 
     <!-- Номер слайда -->
     <div class="slide-number" id="slideNumber">1 / 29</div>
+
+    <!-- Логотип -->
+    <img src="DandelionDiz/logodndln.svg" alt="Dandelion Logo" class="logo">
 
     <script>
         let currentSlide = 0;
