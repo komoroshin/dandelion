@@ -62,41 +62,41 @@
 
         /* Градиентные фоны для слайдов без изображений */
         .gradient-purple {
-            background: linear-gradient(135deg, #F5F3FF 0%, #EDE9FE 100%);
+            background: linear-gradient(135deg, #FFFFFF 0%, #FEFBFF 100%);
         }
 
         .gradient-purple-dark {
-            background: linear-gradient(135deg, #EDE9FE 0%, #F5F3FF 100%);
+            background: linear-gradient(135deg, #FEFBFF 0%, #FFFFFF 100%);
         }
 
         /* Типографика */
         h1 {
-            font-size: 64px;
+            font-size: 72px;
             font-weight: 700;
             margin-bottom: 20px;
             line-height: 1.2;
         }
 
         h2 {
-            font-size: 48px;
+            font-size: 56px;
             font-weight: 700;
             margin-bottom: 20px;
         }
 
         h3 {
-            font-size: 32px;
+            font-size: 38px;
             font-weight: 600;
             margin-bottom: 15px;
         }
 
         .subtitle {
-            font-size: 28px;
+            font-size: 32px;
             opacity: 0.9;
             margin-bottom: 40px;
         }
 
         .section-number {
-            font-size: 18px;
+            font-size: 22px;
             opacity: 0.7;
             margin-bottom: 15px;
             letter-spacing: 2px;
@@ -106,7 +106,7 @@
         .checkmark-list {
             list-style: none;
             text-align: left;
-            font-size: 24px;
+            font-size: 28px;
             line-height: 2;
             max-width: 900px;
         }
@@ -116,7 +116,7 @@
             color: #7C3AED;
             font-weight: bold;
             margin-right: 15px;
-            font-size: 28px;
+            font-size: 32px;
         }
 
         /* Карточки */
@@ -154,18 +154,18 @@
         }
 
         .card-icon {
-            font-size: 48px;
+            font-size: 56px;
             margin-bottom: 15px;
         }
 
         .card-title {
-            font-size: 24px;
+            font-size: 28px;
             font-weight: 600;
             margin-bottom: 10px;
         }
 
         .card-text {
-            font-size: 18px;
+            font-size: 22px;
             line-height: 1.6;
             opacity: 0.9;
         }
@@ -195,7 +195,7 @@
         }
 
         .comparison-item {
-            font-size: 18px;
+            font-size: 22px;
             line-height: 1.6;
             margin-bottom: 12px;
             padding-left: 35px;
@@ -205,7 +205,7 @@
         .comparison-item::before {
             position: absolute;
             left: 0;
-            font-size: 24px;
+            font-size: 28px;
         }
 
         .comparison-item.negative::before {
@@ -219,7 +219,7 @@
 
         /* Секционные заголовки */
         .section-slide {
-            background: linear-gradient(135deg, #F5F3FF 0%, #EDE9FE 100%);
+            background: linear-gradient(135deg, #FFFFFF 0%, #FEFBFF 100%);
         }
 
         /* Фон первого слайда */
@@ -235,7 +235,7 @@
             background: rgba(139, 92, 246, 0.15);
             padding: 10px 20px;
             border-radius: 10px;
-            font-size: 18px;
+            font-size: 22px;
             margin-bottom: 30px;
             display: inline-block;
             border: 2px solid rgba(139, 92, 246, 0.3);
@@ -243,7 +243,7 @@
 
         /* Большие цифры */
         .big-number {
-            font-size: 120px;
+            font-size: 140px;
             font-weight: 900;
             color: #7C3AED;
             margin-bottom: 20px;
@@ -268,7 +268,7 @@
             background: rgba(139, 92, 246, 0.1);
             border: 2px solid rgba(139, 92, 246, 0.3);
             color: #5B4A9D;
-            font-size: 20px;
+            font-size: 24px;
             cursor: pointer;
             transition: all 0.3s ease;
             display: flex;
@@ -318,7 +318,7 @@
             padding: 15px 20px;
             border-radius: 10px;
             color: #5B4A9D;
-            font-size: 14px;
+            font-size: 16px;
             backdrop-filter: blur(10px);
             border: 2px solid rgba(139, 92, 246, 0.2);
             z-index: 100;
@@ -390,30 +390,41 @@
 
         @media (max-width: 1400px) {
             .slide-content { padding: 40px 30px; }
-            h2 { font-size: 42px; }
-            .comparison-item { font-size: 16px; }
+            h1 { font-size: 64px; }
+            h2 { font-size: 50px; }
+            h3 { font-size: 34px; }
+            .subtitle { font-size: 28px; }
+            .checkmark-list { font-size: 24px; }
+            .card-text { font-size: 20px; }
+            .comparison-item { font-size: 20px; }
             .comparison-column { padding: 25px 20px; }
             .bottom-text { bottom: 90px; font-size: 22px; }
         }
 
         @media (max-width: 1024px) {
             .slide-content { padding: 30px 20px; }
-            h1 { font-size: 48px; }
-            h2 { font-size: 36px; }
-            h3 { font-size: 28px; }
+            h1 { font-size: 56px; }
+            h2 { font-size: 44px; }
+            h3 { font-size: 32px; }
+            .subtitle { font-size: 26px; }
+            .checkmark-list { font-size: 22px; }
+            .card-text { font-size: 18px; }
+            .comparison-item { font-size: 18px; }
             .comparison-table { gap: 20px; }
             .bottom-text { bottom: 95px; font-size: 20px; }
         }
 
         @media (max-width: 768px) {
-            h1 { font-size: 36px; }
-            h2 { font-size: 32px; }
-            h3 { font-size: 24px; }
-            .subtitle { font-size: 18px; }
+            h1 { font-size: 42px; }
+            h2 { font-size: 36px; }
+            h3 { font-size: 28px; }
+            .subtitle { font-size: 22px; }
+            .checkmark-list { font-size: 20px; }
+            .card-text { font-size: 16px; }
             .cards-grid.three-col,
             .cards-grid.four-col { grid-template-columns: 1fr; }
             .comparison-table { grid-template-columns: 1fr; }
-            .comparison-item { font-size: 14px; }
+            .comparison-item { font-size: 16px; }
             .bottom-text { bottom: 100px; font-size: 18px; }
         }
     </style>
